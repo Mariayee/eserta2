@@ -1,4 +1,4 @@
-"""SPPM URL Configuration
+"""eserta URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include,url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('penganjur/', include('penganjur.urls')),
 ]

@@ -1,5 +1,5 @@
 """
-WSGI config for SPPM project.
+WSGI config for eserta project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'SPPM.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'eserta.settings')
 
 application = get_wsgi_application()
